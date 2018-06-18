@@ -1,0 +1,10 @@
+*~
+*.pyc
+*.lock
+.DS_*
+.ipynb_checkpoints
+.cache
+.vscode
+__pycache__
+dist
+node_modules
