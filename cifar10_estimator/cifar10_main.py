@@ -192,7 +192,7 @@ def get_model_fn(num_gpus, variable_strategy, num_workers):
       stacked_labels = tf.concat(labels, axis=0)
       metrics = {
           'error':
-              1.0 - tf.metrics.accuracy(stacked_labels, predictions['classes'])
+              tf.metrics.accuracy(stacked_labels, predictions['classes'])
       }
 
     return tf.estimator.EstimatorSpec(
